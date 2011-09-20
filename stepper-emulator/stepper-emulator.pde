@@ -97,7 +97,7 @@ void loop()
         else if (position < target)
         {
             digitalWrite(MOTOR_DIR_PIN, LOW);
-            digitalWrite(MOTOR_SPEED_PIN, motor_speed);
+            analogWrite(MOTOR_SPEED_PIN, motor_speed);
         }
         else
         {
